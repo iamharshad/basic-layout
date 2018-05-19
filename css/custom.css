@@ -1,0 +1,67 @@
+*{ -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;} body{margin:0;padding:0}
+ 
+/*float*/ 
+.right{float:right !important} .left{float:left !important} .nofloat{float:none !important;}
+.center-block {display: block;margin-right: auto;margin-left: auto;}
+.hide {display: none !important;} .show {display: block !important;}
+.affix {position: fixed;}
+/*clearfix*/ 
+.clearfix{clear:both !important}
+/*typography*/
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0;float:left}  p{margin:0;padding:0;}
+/*ul*/
+ul{margin:0;padding:0}
+a{color: #337ab7;text-decoration: none;cursor:pointer} a:hover,a:focus {color: #23527c;text-decoration: underline;}
+/*text*/
+.text-left {text-align: left;} .text-right{text-align: right;} .text-center{text-align: center;} .text-justify{text-align: justify;}
+
+/*font face*/
+@font-face {
+  font-family: '';src: url('');
+}
+/*Responsive layout*/
+.container {
+  padding-right: 15px;  padding-left: 15px;
+  margin-right: auto;   margin-left: auto;
+}
+.row {margin-right: -15px;margin-left: -15px;}
+
+/*griding system*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+	float:left;min-height:1px;
+}
+																	/* 12 col for mobile */ 
+.col-m1 {width: 8.33%;} .col-m2 {width: 16.66%;} .col-m3 {width: 25%;} .col-m4 {width: 33.33%;} .col-m5 {width: 41.66%;} .col-m6 {width: 50%;} 
+.col-m7 {width: 58.33%;} .col-m8 {width: 66.66%;} .col-m9 {width: 75%;} .col-m10 {width: 83.33%;} .col-m11 {width: 91.66%;} .col-m12 {width: 100%;}
+
+/*view port*/
+@media (min-width: 1200px) {
+	/*chagne the container with as you required layout*/
+.container {
+    width: 1170px;
+}
+  /*12 col for large device*/
+.col-1 {width: 8.33%;} .col-2 {width: 16.66%;} .col-3 {width: 25%;} .col-4 {width: 33.33%;} .col-5 {width: 41.66%;} .col-6 {width: 50%;} .col-7 {width: 58.33%;} .col-8 {width: 66.66%;} .col-9 {width: 75%;} .col-10 {width: 83.33%;} .col-11 {width: 91.66%;} .col-12 {width: 100%;}
+}
+/*viewport over*/
+
+/*dropdown css*/
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;  top: 100%;left: 0;z-index: 1000;display: none;float: left;min-width: 160px;padding: 5px 0;margin: 2px 0 0;}
+
+/*.div{animation: 1s ease myMove;}
+@keyframes myMove{	
+	from{width:100px}
+	to{width:400px}
+}*/
